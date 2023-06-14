@@ -115,6 +115,48 @@ namespace RandomHaikuGenerator
 
             Matrix m = new Matrix();
             m.multiplyMatrix();
+            int[,] someStuff = { { 1, 4, 2 }, { 2, 5, 1 } };
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+
+                    Console.WriteLine("result" + someStuff[i, j]);
+                }
+            }
+            m.AddToMatrix(someStuff);
+            int dos = 2;
+            m.Add(dos);
+            Console.WriteLine("dos: " +dos);
+            /*
+                        Library library = new Library();
+                        library.SaveBook(0,"");
+                        library.SaveBook(10,"Lubosito");
+                        library.SaveBook(20,"Some corny stuff");
+                        library.SaveBook(30,"For the cuchy");
+                        library.SaveBook(10, "Lubosito");
+                        library.SaveBook(30, "For the cuchy");
+                        library.SaveBook(40, "Que olor pelis");
+                        library.SaveBook(50, "Hola");
+                        library.SaveBook(60, "Wow");
+                        library.SaveBook(70, "Hola");
+                        library.SaveBook(80, "Hola");
+                        library.BookFount("Hola");
+                        library.SaveBook(80, "Hola");
+                        library.PrintBookInfo();
+                        int exist = library.AvailableStock("Lubosito");
+                        int num = library.AvailableStock("Hola");
+                        Console.WriteLine("" + num + "" + exist);
+                        Console.WriteLine($"{exist} some num {num}");
+            */
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                   
+                    Console.WriteLine("result" +someStuff[i, j]);
+                }
+            }
             Console.ReadKey();
         }
 

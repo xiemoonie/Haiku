@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace RandomHaikuGenerator
 {
+
     public class Matrix
     {
         int[,] students = { { 1, 4, 2 }, { 2, 5, 1 } };
@@ -32,14 +33,35 @@ namespace RandomHaikuGenerator
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    Console.WriteLine("" + results[i, j]);
+                    Console.WriteLine("result matrix" + results[i, j]);
                 }
 
             }
 
+        }
+
+        public void AddToMatrix(int[,] matrix)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    matrix[i, j] += 2;
+                    Console.WriteLine("addition" + matrix[i, j]);
+                }
+            }
+
 
         }
-    }
+
+        public void Add(int m)
+        {
+            m = m + 2;
+         }
+
+
+        }
+    
 
 
 }
