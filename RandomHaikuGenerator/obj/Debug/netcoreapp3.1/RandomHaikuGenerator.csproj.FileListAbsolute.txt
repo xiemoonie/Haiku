@@ -1,0 +1,17 @@
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\bin\Debug\netcoreapp3.1\RandomHaikuGenerator.deps.json
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\bin\Debug\netcoreapp3.1\RandomHaikuGenerator.runtimeconfig.json
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\bin\Debug\netcoreapp3.1\RandomHaikuGenerator.runtimeconfig.dev.json
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\obj\Debug\netcoreapp3.1\RandomHaikuGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\obj\Debug\netcoreapp3.1\RandomHaikuGenerator.AssemblyInfoInputs.cache
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\obj\Debug\netcoreapp3.1\RandomHaikuGenerator.AssemblyInfo.cs
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\obj\Debug\netcoreapp3.1\RandomHaikuGenerator.csproj.CopyComplete
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\obj\Debug\netcoreapp3.1\RandomHaikuGenerator.genruntimeconfig.cache
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\bin\Debug\netcoreapp3.1\RandomHaikuGenerator.exe
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\bin\Debug\netcoreapp3.1\RandomHaikuGenerator.dll
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\bin\Debug\netcoreapp3.1\RandomHaikuGenerator.pdb
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\bin\Debug\netcoreapp3.1\FsCheck.dll
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\bin\Debug\netcoreapp3.1\FSharp.Core.dll
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\obj\Debug\netcoreapp3.1\RandomHaikuGenerator.csproj.AssemblyReference.cache
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\obj\Debug\netcoreapp3.1\RandomHaikuGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\obj\Debug\netcoreapp3.1\RandomHaikuGenerator.dll
+C:\Users\Carola\Documents\EmbeddedSystems\RandomHaikuGenerator\RandomHaikuGenerator\obj\Debug\netcoreapp3.1\RandomHaikuGenerator.pdb

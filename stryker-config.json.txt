@@ -1,0 +1,7 @@
+{
+    "stryker-config":
+    {
+        "solution": "RandomHaikuGenerator.sln",
+        "project": "TestingTutorial/TestingTutorial.csproj"
+    }
+}
