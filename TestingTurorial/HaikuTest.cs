@@ -89,7 +89,7 @@ namespace TestingTurorial
             Factory f = new Factory();
             ICar c = f.FactoryMethod(type);
             Assert.IsNotNull(c);
-        
+
         }
 
         [TestCase("")]
@@ -98,7 +98,7 @@ namespace TestingTurorial
             Factory f = new Factory();
             ICar c = f.FactoryMethod(type);
             Assert.IsNull(c);
-            
+
         }
 
         [Test]
@@ -111,23 +111,23 @@ namespace TestingTurorial
             //Assert
             //Console.WriteLine($"{transactionViewModel.Transactions.Count}");
             Assert.AreEqual(3, transactionViewModel.Transactions.Count);
-            
+
         }
 
         [Test]
         public async Task GetTransactions_Transactions_NotEmpty()
         {
-            bool c= true;
+            bool c = true;
             //Arrange
             var transactionViewModel = new WalletTransaction(new StubWallet());
             //Act
             await transactionViewModel.GetTransactions();
             //Assert
-            foreach (var t in transactionViewModel.Transactions )
+            foreach (var t in transactionViewModel.Transactions)
             {
-                if(t.Id == 0 || t.Amount == 0 || t.Symbol == "")
+                if (t.Id == 0 || t.Amount == 0 || t.Symbol == "")
                 {
-                  c = false;
+                    c = false;
                 }
             }
             Assert.IsTrue(c);
@@ -137,7 +137,7 @@ namespace TestingTurorial
         {
             var sender = new EmailSenderMock();
             var notifier = new EmailSender(sender);
-            notifier.NotifyItWasSent("2334","iutt");
+            notifier.NotifyItWasSent("2334", "iutt");
             Assert.IsTrue(sender.mailSent);
         }
 
@@ -148,24 +148,37 @@ namespace TestingTurorial
             var notifier = new EmailSender(sender);
             notifier.NotifyItWasSent("2334", "iutt");
             bool r = false;
-         
-                if (IsNullOrEmptyOrAllSpaces(sender.subject) || IsNullOrEmptyOrAllSpaces(sender.body) || IsNullOrEmptyOrAllSpaces(sender.toAdress))
-                {
-                    r = true;
-                }
-           
-            Assert.IsFalse(r);
+
+            if (IsNullOrEmptyOrAllSpaces(sender.subject) || IsNullOrEmptyOrAllSpaces(sender.body) || IsNullOrEmptyOrAllSpaces(sender.toAdress))
+            {
+                r = true;
             }
+
+            Assert.IsFalse(r);
+        }
 
         private bool IsNullOrEmptyOrAllSpaces(string str)
         {
             bool b = false;
             if (string.IsNullOrWhiteSpace(str))
             {
-               b = true;
+                b = true;
             }
             return b;
-            
+        }
+        [Test]
+        public void NotEmptyArray()
+        {
+            Library library = new Library();
+            bool r = library.GetBookInStorage() > 0 ? true : false;
+            Assert.True(r);
+        }
+        [Test]
+        public void EmptyArray()
+        {
+            Library library = new Library();
+            bool r2 = library.GetBookInStorage() <= 0 ? true : false;
+            Assert.False(r2);
         }
 
         [Test]
@@ -177,7 +190,35 @@ namespace TestingTurorial
             Assert.IsTrue(request.foodRequested);
         }
 
-    
+        [TestCase(34, "Hola")]
+        [TestCase(3, "H")]
+        public void AddBooksToLibrary(int price, string name)
+        {
+            Library library = new Library();
+            bool added = library.SaveBook(price, name);
+            Assert.True(added);
+        }
+
+        [TestCase(0, "43")]
+        [TestCase(1, "")]
+        [TestCase(-1, "")]
+        public void CantAddBooksToLibrary(int price, string name)
+        {
+            bool result = price <= 0 || name.Length == 0 ? false : true;
+            Assert.False(result);
+        }
+
+
+        [TestCase(0, "hey")]
+        public void CanAddBooksToLibrary(int price, string name)
+        {
+            bool result = name.Length > 0 ? true : false;
+            Assert.True(result);
+        }
+
+
+
+
 
     }
 }
